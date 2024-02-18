@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Landing Page Design</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            .header {
+                position: fixed;
+                top: 0;left: 0;
+                right: 0;
+                height: auto;
+                background-color: #000;
+                color: #fff;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+                z-index: 1000;
+                transition: all 0.3s ease;
+                overflow: hidden;
+            }
+
+            .header.show {
+                height: 100vh;
+                overflow-y: auto;
+            }
+
+            .header ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .header ul li {
+                margin: 10px 0;
+            }
+
+            .header ul li a {
+                padding: 10px 20px;
+                background: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <section>
+        <div class="header" id="navbar">
+            <h2 class="logo">Think Creative</h2>
+            <ul>
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Our Work</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bannerText">
+            <h2>Think Creative</h2><br>
+            <h3>And Make Innovative Design</h3>
+            <p>Whether in the realm of art, technology, business, or any other field, "Think Creative" serves as a beacon for those who seek to break free from the ordinary 
+               and to forge their own path. It celebrates the power of imagination as a driving force behind progress and transformation. "Think Creative" is not just a phrase—it's 
+               a philosophy that encourages us to see the world through fresh eyes, to find beauty in the unexpected, and to create something truly remarkable.
+    </p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="bulb.jpg" class="bulb">
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/kashif-mujeeb-64789616a/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <div class="element1"></div>
+        <div class="element2"></div>
+    </section>
+    <script src="script.js"></script>
+   
+</body>
+</html>
